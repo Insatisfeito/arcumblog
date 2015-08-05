@@ -1,0 +1,35 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="post col-md-4 col-sm-6 col-xs-12">
+                        <div class="post-inner">
+                            <figure class="post-thumb">
+                                <a href="{{url}}"><img class="img-responsive" src="{{image}}" alt=""></a>
+                            </figure><!--//post-thumb-->
+                            <div class="content">
+                                <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+                                <div class="post-entry">
+
+
+                                </div>
+                                <div class="meta">
+                                    <ul class="meta-list list-inline">
+                                        <li class="post-time post_date date updated">{{date format="DD MMMM YYYY"}}</li>
+                                        <li class="post-author"> by <a href="#">{{author.name}}</a></li>
+                                        <li class="post-comments-link">
+                                            <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8</a>
+                                        </li>
+                                    </ul><!--//meta-list-->
+                                </div><!--meta-->
+                            </div><!--//content-->
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}
