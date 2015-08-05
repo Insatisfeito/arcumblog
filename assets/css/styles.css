@@ -1926,11 +1926,7 @@ select {
   margin-bottom: 60px;
   position: relative;
   height: 500px;
-  background: #253340 url('../images/blog/post-2.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #253340 ;
   color: #fff;
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading:after {
