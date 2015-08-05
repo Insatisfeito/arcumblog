@@ -9,10 +9,11 @@
                         <div class="post-inner">
                             <figure class="post-thumb">
                                 <a href="{{url}}"><img class="img-responsive" src="{{image}}" alt=""></a>
-                            </figure><!--//post-thumb-->
+                            </figure>
                             <div class="content">
                                 <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
                                 <div class="post-entry">
+                                {{excerpt words="26"}}...  <a class="read-more" href="{{url}}">&raquo;</a></p>
 
 
                                 </div>
@@ -23,11 +24,11 @@
                                         <li class="post-comments-link">
                                             <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8</a>
                                         </li>
-                                    </ul><!--//meta-list-->
-                                </div><!--meta-->
-                            </div><!--//content-->
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
 {{/foreach}}
 
