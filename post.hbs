@@ -11,7 +11,7 @@
             <div class="blog-headline-bg">
             </div><!--//blog-headline-bg-->
             <div class="blog-entry">
-                <article class="post">
+                <article class="post post-style">
                     <header class="blog-entry-heading" style="background: #253340 url({{image}}) no-repeat 50% center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
                         <div class="container text-center">
                             <h2 class="title">{{title}}</h2>
@@ -23,8 +23,8 @@
                             </div><!--meta-->
                         </div><!--//container-->
                         <nav class="post-nav post-nav-top">
-                            <span class="nav-previous"><a href="blog-single.html#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous post</a></span>
-                            <span class="nav-next"><a href="blog-single.html#" rel="next">Next post<i class="fa fa-long-arrow-right"></i></a></span>
+                            <span class="nav-previous"><a href="/blog/" rel="prev"><i class="fa fa-long-arrow-left"></i>Voltar ao blog</a></span>
+
                         </nav><!--//post-nav-->
                     </header><!--//blog-entry-heading-->
 
@@ -39,18 +39,28 @@
 
 
 
-                            <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                                    <span class="nav-previous"><a href="blog-single.html#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous</a></span>
-                                    <span class="nav-next"><a href="blog-single.html#" rel="next">Next<i class="fa fa-long-arrow-right"></i></a></span>
-                            </nav><!--//post-nav-->
-
-
-
                         </div><!--//row-->
                     </div><!--//container-->
                 </article><!--//post-->
             </div><!--//blog-entry-->
         </div><!--//blog-entry-wrapper-->
-
+<aside class="read-next">
+    {{#next_post}}
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/prev_post}}
+</aside>
 
 {{/post}}
