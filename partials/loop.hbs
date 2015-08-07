@@ -1,7 +1,4 @@
 {{! Previous/next page links - only displayed on page 2+ }}
-<div class="extra-pagination inner">
-    {{pagination}}
-</div>
 
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
@@ -19,8 +16,10 @@
                                 </div>
                                 <div class="meta">
                                     <ul class="meta-list list-inline">
-                                        <li class="post-time post_date date updated">{{date format="DD MMMM YYYY"}}</li>
-                                        <li class="post-author"> by <a href="#">{{author.name}}</a></li>
+                                        <li class="post-time post_date date updated">{{date format="DD MMM YYYY"}} </li>
+                                        <li class="post-author"> by {{author}}</li>
+                                        <li class="post-author"> {{tags prefix="Tags: "}}</li>
+
 
                                     </ul>
                                 </div>
@@ -31,4 +30,4 @@
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}
-{{pagination}}
+

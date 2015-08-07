@@ -15,24 +15,14 @@
     </section>
 
 <div class="blog container">
-            <div class="row">
-                <div id="blog-mansonry" class="blog-list" style="position: relative; height: 1811.765625px;">
+            <div class="row">{{pagination}}
+                <div id="blog-mansonry" class="blog-list">
 
 {{> "loop"}}
 
-                </div><!--//blog-list-->
+                </div><!--//blog-list-->{{pagination}}
             </div><!--//row-->
-            <div class="pagination-container text-center">
-                <ul class="pagination">
-                    <li class="disabled"><a href="#">«</a></li>
-                    <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">»</a></li>
-                </ul><!--//pagination-->
-            </div><!--//pagination-container-->
+
         </div>
 
 

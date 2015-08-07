@@ -1780,7 +1780,6 @@ select {
 .blog-list .post .post-thumb {
     background: #253340;
     overflow: hidden;
-    height: 240px;
     -webkit-border-top-right-radius: 4px;
     -webkit-border-bottom-right-radius: 0;
     -webkit-border-bottom-left-radius: 0;
@@ -1890,7 +1889,6 @@ select {
     padding-top: 350px;
     position: relative;
     color: #fff;
-    margin-bottom: 80px;
     height: 500px;
     z-index: 10;
 }
@@ -2516,6 +2514,29 @@ margin on the iframe, cause it breaks stuff. */
     right: 0;
     margin: 0;
 }
+
+.pagination {
+    position: relative;
+    width: 100%;
+    margin: 4rem auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #9EABB3;
+    text-align: right;
+}
+
+.pagination a{
+    text-decoration: none;
+}
+
+.page-number{
+    display: inline-block;
+    padding: 2px 0;
+    min-width: 100px;
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+
 
 @media (max-width: 767px) {
     .config-wrapper {
