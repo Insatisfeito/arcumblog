@@ -1,0 +1,40 @@
+{{!< default}}
+<div class="blog-entry-wrapper">
+    <div class="blog-headline-bg">
+    </div>
+    <div class="blog-entry">
+        <article class="post post-style">{{#author}}
+            <header class="blog-entry-heading" style="background: #253340 url({{cover}}) no-repeat 50% center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                <div class="container text-center" style="padding-top: 175px;">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <figure class="profile">
+                                <div class="img-circle" style="background:url('{{image}}'); background-size: cover;height: 0;padding-bottom: 100%;"></div>
+                            </figure>
+                        </div>
+                        <div class="col-md-9">
+                            <h2 class="title">{{name}}</h2>
+                            <div class="meta">
+                                <ul class="meta-list list-inline">
+                                    {{#if location}}
+                                    <li class="post-time"><i class="fa fa-map-marker"></i> {{location}}</li>{{/if}} {{#if website}}
+                                    <li class="post-time"><i class="fa fa-globe"></i> <a href="{{website}}">{{website}}</a></li>{{/if}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {{#if bio}}<blockquote style="text-align:justify;margin-top: 20px;">{{bio}}</blockquote>{{/if}}</div>
+                <nav class="post-nav post-nav-top">
+                    <span class="nav-previous"><a href="/blog/" rel="prev"><i class="fa fa-long-arrow-left"></i>Voltar ao blog</a></span>
+                </nav>
+            </header>{{/author}}
+            <div class="blog blog-category container">
+                <div class="row">
+                    <div class="blog-list blog-category-list">
+                        {{> "cat-loop"}}
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

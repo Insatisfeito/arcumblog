@@ -1,0 +1,22 @@
+{{#foreach posts}}
+<article class="post col-md-4 col-sm-6 col-xs-12">
+    <div class="post-inner">
+        <figure class="post-thumb">
+            <a href="{{url}}"><img class="img-responsive" src="{{image}}" alt=""></a>
+        </figure>
+        <div class="content">
+            <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+            <div class="post-entry">
+                {{excerpt characters="150"}}... <a class="read-more" href="{{url}}">&raquo;</a></p>
+            </div>
+            <div class="meta">
+                <ul class="meta-list list-inline">
+                    <li class="post-time post_date date updated">{{date format="DD MMM YYYY"}} </li>
+                    <li class="post-author"> por {{author}}</li>
+                    <li class="post-author"> {{tags prefix="Tags: "}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+{{/foreach}}

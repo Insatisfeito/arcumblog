@@ -1,0 +1,19 @@
+{{!< default}}
+<div class="headline-bg cultural-headline-bg cultural">
+    <div class="overlay"></div>
+</div>
+<section class="blog-header section section-on-bg">
+    <div class="container text-center">
+        <h2 class="title">Blog ARCUM</h2>
+        <p class="title-intro">Descubra as histórias, noticias e novidades da nossa associação!</p>
+    </div>
+</section>
+<div class="blog container">
+    <div class="row">
+        {{pagination}}
+        <div id="blog-mansonry" class="blog-list">
+            {{> "loop"}}
+        </div>
+        {{pagination}}
+    </div>
+</div>
